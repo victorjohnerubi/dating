@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe | Messages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand-wrap">
+            <div class="logo">VIBE</div>
+            <span class="nav-status">Messaging</span>
+        </div>
+        <nav aria-label="Main navigation" class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="signup.html">Profile</a>
+            <a href="matches.html">Matches</a>
+            <a href="people.html">Members</a>
+            <a href="chat.html">Chat</a>
+            <a href="#" class="sign-out-link">Sign out</a>
+        </nav>
+    </header>
+
+    <main class="page-shell chat-shell">
+        <div class="chat-panel">
+            <div class="chat-header">
+                <button type="button" class="back-btn">←</button>
+                <div class="chat-user-meta">
+                    <strong id="chat-match-name">Elijah</strong>
+                    <small class="online-pill">online now</small>
+                </div>
+                <button type="button" id="reset-chat" class="ghost-btn">Reset</button>
+            </div>
+
+            <div class="chat-body" id="chat-body">
+                <div class="message incoming">
+                    <span>You’re the first person who likes both jazz and ramen spots.</span>
+                    <small class="message-meta">just now</small>
+                </div>
+                <div class="message outgoing">
+                    <span>That’s a strong sign. Want to do a late-night cafe crawl this week?</span>
+                    <small class="message-meta">just now</small>
+                </div>
+                <div class="message incoming">
+                    <span>Absolutely. I’m in if it includes live sets.</span>
+                    <small class="message-meta">just now</small>
+                </div>
+            </div>
+
+            <div class="quick-replies" id="quick-replies">
+                <button class="quick-reply" type="button" data-prompt="Tell me about your ideal date">Ideal date</button>
+                <button class="quick-reply" type="button" data-prompt="What music do you like?">Music vibe</button>
+                <button class="quick-reply" type="button" data-prompt="Plan a fun weekend together">Weekend idea</button>
+            </div>
+
+            <div class="reaction-strip" aria-label="Chat reactions">
+                <button class="reaction-btn" type="button" data-reaction="🔥">🔥</button>
+                <button class="reaction-btn" type="button" data-reaction="💬">💬</button>
+                <button class="reaction-btn" type="button" data-reaction="💞">💞</button>
+            </div>
+
+            <form id="chat-form" class="chat-input">
+                <input id="chat-input-field" type="text" placeholder="Type a message...">
+                <button id="send-button" type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vibe Dating Engine. Data encrypted securely.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

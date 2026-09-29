@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe | Members</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand-wrap">
+            <div class="logo">VIBE</div>
+            <span class="nav-status">Members</span>
+        </div>
+        <nav aria-label="Main navigation" class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="matches.html">Matches</a>
+            <a href="people.html">Members</a>
+            <a href="chat.html">AI Chat</a>
+            <a href="#" class="sign-out-link">Sign out</a>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="members-shell">
+            <div class="members-heading">
+                <div>
+                    <p class="eyebrow">Meet the community</p>
+                    <h1>People on Vibe</h1>
+                </div>
+                <span id="member-count" class="member-count"></span>
+            </div>
+            <form id="member-search-form" class="directory-tools">
+                <label class="visually-hidden" for="member-search">Search members</label>
+                <input id="member-search" name="q" type="search" maxlength="40" placeholder="Search names or bios">
+                <button class="submit-btn" type="submit">Search</button>
+            </form>
+            <section class="inbox-section" aria-labelledby="inbox-heading">
+                <h2 id="inbox-heading">Your conversations</h2>
+                <div id="inbox-list" class="member-list"></div>
+                <p id="inbox-empty" class="directory-status">Your conversations will appear here.</p>
+            </section>
+            <h2 class="directory-subheading">Discover members</h2>
+            <p id="directory-status" class="directory-status" role="status">Loading members...</p>
+            <div id="member-list" class="member-list"></div>
+        </section>
+    </main>
+
+    <footer><p>&copy; 2026 Vibe Dating Engine.</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

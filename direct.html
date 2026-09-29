@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe | Direct Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand-wrap">
+            <div class="logo">VIBE</div>
+            <span class="nav-status">Private conversation</span>
+        </div>
+        <nav aria-label="Main navigation" class="top-nav">
+            <a href="people.html">Members</a>
+            <a href="matches.html">Matches</a>
+            <a href="#" class="sign-out-link">Sign out</a>
+        </nav>
+    </header>
+
+    <main class="page-shell chat-shell">
+        <section class="chat-panel direct-panel">
+            <div class="chat-header">
+                <a class="back-btn back-link" href="people.html" aria-label="Back to members">&#8592;</a>
+                <div class="chat-user-meta">
+                    <strong id="direct-peer-name">Conversation</strong>
+                    <small class="online-pill">Member</small>
+                </div>
+            </div>
+            <p id="direct-status" class="direct-status" role="status"></p>
+            <div class="chat-body" id="direct-chat-body" aria-live="polite"></div>
+            <form id="direct-chat-form" class="chat-input">
+                <input id="direct-chat-input" type="text" maxlength="2000" autocomplete="off" placeholder="Write a message..." required>
+                <button id="direct-send-button" type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer><p>&copy; 2026 Vibe Dating Engine.</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

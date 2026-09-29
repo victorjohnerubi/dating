@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe | Create Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand-wrap">
+            <div class="logo">VIBE</div>
+            <span class="nav-status">Profile Setup</span>
+        </div>
+        <nav aria-label="Main navigation" class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="signup.html">Profile</a>
+            <a href="login.html">Sign in</a>
+            <a href="matches.html">Matches</a>
+            <a href="people.html">Members</a>
+            <a href="chat.html">Chat</a>
+            <a href="#" class="sign-out-link">Sign out</a>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="form-container signup-form">
+            <h2>Create Your Profile</h2>
+            <form id="signup-form" action="/api/register" method="POST">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" maxlength="254" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" autocomplete="new-password" minlength="12" maxlength="128" required>
+                    <small class="field-hint">Use at least 12 characters.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullName">First Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Your display name" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="gender">My Identity</label>
+                        <select id="gender" name="gender" required>
+                            <option value="man">Man</option>
+                            <option value="woman">Woman</option>
+                            <option value="nonbinary">Non-Binary</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="lookingFor">Looking For</label>
+                        <select id="lookingFor" name="lookingFor" required>
+                            <option value="women">Women</option>
+                            <option value="men">Men</option>
+                            <option value="everyone">Everyone</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Your Core Vibe Tags</label>
+                    <div class="tags-grid">
+                        <label class="tag-item"><input type="checkbox" name="vibeTags" value="Music"> 🎵 Music</label>
+                        <label class="tag-item"><input type="checkbox" name="vibeTags" value="Gaming"> 🎮 Gaming</label>
+                        <label class="tag-item"><input type="checkbox" name="vibeTags" value="Fitness"> 🏋️ Fitness</label>
+                        <label class="tag-item"><input type="checkbox" name="vibeTags" value="Cafes"> ☕ Cafes</label>
+                        <label class="tag-item"><input type="checkbox" name="vibeTags" value="Travel"> ✈️ Travel</label>
+                        <label class="tag-item"><input type="checkbox" name="vibeTags" value="Movies"> 🍿 Movies</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Bio / Energy Statement</label>
+                    <textarea id="bio" name="bio" rows="3" placeholder="What kind of vibe are you bringing today?" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Find Matches</button>
+            </form>
+            <p class="auth-switch">Already have an account? <a href="login.html">Sign in</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vibe Dating Engine. Data encrypted securely.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
