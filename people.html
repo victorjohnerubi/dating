@@ -18,6 +18,7 @@
             <a href="people.html">Members</a>
             <a href="chat.html">AI Chat</a>
             <a href="#" class="sign-out-link">Sign out</a>
+            <button class="theme-toggle" type="button" aria-pressed="false">Light mode</button>
         </nav>
     </header>
 
@@ -39,6 +40,24 @@
                 <h2 id="inbox-heading">Your conversations</h2>
                 <div id="inbox-list" class="member-list"></div>
                 <p id="inbox-empty" class="directory-status">Your conversations will appear here.</p>
+            </section>
+            <section class="blocked-section" aria-labelledby="blocked-heading">
+                <h2 id="blocked-heading">Blocked members</h2>
+                <div id="blocked-list" class="member-list"></div>
+                <p id="blocked-empty" class="directory-status">You have no blocked members.</p>
+            </section>
+            <section class="privacy-section" aria-labelledby="privacy-heading">
+                <h2 id="privacy-heading">Account and privacy</h2>
+                <p>Download a copy of your profile, AI chats, member conversations, and reports you submitted.</p>
+                <button id="export-account-data" class="safety-action" type="button">Download my data</button>
+                <p id="privacy-status" class="directory-status" role="status"></p>
+                <form id="delete-account-form" class="delete-account-form">
+                    <label for="delete-account-password">Delete your account</label>
+                    <p>This permanently removes your profile, chats, and account-created safety actions. Reports filed about your account may be retained without your profile identity.</p>
+                    <input id="delete-account-password" name="password" type="password" autocomplete="current-password" maxlength="128" placeholder="Enter your password" required>
+                    <label class="delete-confirm-label"><input id="delete-account-confirm" type="checkbox" required> I understand this cannot be undone.</label>
+                    <button class="safety-action danger-action" type="submit">Delete account</button>
+                </form>
             </section>
             <h2 class="directory-subheading">Discover members</h2>
             <p id="directory-status" class="directory-status" role="status">Loading members...</p>

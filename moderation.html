@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe | Safety Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="moderation-page">
+    <header class="navbar">
+        <div class="brand-wrap">
+            <div class="logo">VIBE</div>
+            <span class="nav-status">Safety review</span>
+        </div>
+        <button id="moderator-logout" class="theme-toggle" type="button" hidden>Sign out</button>
+    </header>
+
+    <main class="moderation-shell">
+        <section id="moderator-login-panel" class="moderation-login">
+            <p class="eyebrow">Restricted access</p>
+            <h1>Moderator sign in</h1>
+            <form id="moderator-login-form">
+                <label for="moderator-token">Moderator token</label>
+                <input id="moderator-token" name="token" type="password" autocomplete="current-password" required>
+                <button class="submit-btn" type="submit">Sign in</button>
+            </form>
+            <p id="moderator-login-status" class="moderation-status" role="status"></p>
+        </section>
+
+        <section id="moderation-dashboard" hidden>
+            <div class="moderation-heading">
+                <div>
+                    <p class="eyebrow">Member safety</p>
+                    <h1>Open reports</h1>
+                </div>
+                <button id="refresh-reports" class="safety-action" type="button">Refresh</button>
+            </div>
+            <p id="report-status" class="moderation-status" role="status"></p>
+            <div id="report-list" class="report-list"></div>
+            <p id="reports-empty" class="moderation-status" hidden>No open reports.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

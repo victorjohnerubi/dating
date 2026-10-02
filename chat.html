@@ -10,7 +10,7 @@
     <header class="navbar">
         <div class="brand-wrap">
             <div class="logo">VIBE</div>
-            <span class="nav-status">Messaging</span>
+            <span class="nav-status">AI character chat</span>
         </div>
         <nav aria-label="Main navigation" class="top-nav">
             <a href="index.html">Home</a>
@@ -19,6 +19,7 @@
             <a href="people.html">Members</a>
             <a href="chat.html">Chat</a>
             <a href="#" class="sign-out-link">Sign out</a>
+            <button class="theme-toggle" type="button" aria-pressed="false">Light mode</button>
         </nav>
     </header>
 
@@ -28,7 +29,7 @@
                 <button type="button" class="back-btn">←</button>
                 <div class="chat-user-meta">
                     <strong id="chat-match-name">Elijah</strong>
-                    <small class="online-pill">online now</small>
+                    <small class="online-pill">Fictional AI character</small>
                 </div>
                 <button type="button" id="reset-chat" class="ghost-btn">Reset</button>
             </div>
@@ -47,6 +48,8 @@
                     <small class="message-meta">just now</small>
                 </div>
             </div>
+            <p class="ai-disclosure">You’re chatting with a fictional AI character, not a real person.</p>
+            <p id="chat-status" class="chat-status" role="status" aria-live="polite"></p>
 
             <div class="quick-replies" id="quick-replies">
                 <button class="quick-reply" type="button" data-prompt="Tell me about your ideal date">Ideal date</button>

@@ -19,6 +19,7 @@
             <a href="people.html">Members</a>
             <a href="chat.html">Chat</a>
             <a href="#" class="sign-out-link">Sign out</a>
+            <button class="theme-toggle" type="button" aria-pressed="false">Light mode</button>
         </nav>
     </header>
 
@@ -29,11 +30,15 @@
                 <span class="dot-indicator"></span>
             </div>
 
-            <div class="profile-card" id="match-card">
+            <p class="ai-disclosure match-disclosure">Matches based on real members and shared vibe.</p>
+
+            <div class="profile-card" id="match-card" hidden>
+                <img id="match-image" class="profile-image" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Portrait of a potential match">
                 <div class="card-badge" id="match-badge">89% match</div>
+                <span class="character-badge">Member</span>
                 <div class="profile-meta">
                     <h3 id="match-name">Maya</h3>
-                    <p id="match-meta">27 • Brooklyn</p>
+                    <p id="match-meta">27 • Nearby</p>
                 </div>
                 <div class="tag-row" id="match-tags">
                     <span>Live music</span>
@@ -41,9 +46,9 @@
                 </div>
             </div>
 
-            <div class="status-box" id="status-text">Fresh potential match loaded.</div>
+            <div class="status-box" id="status-text">Finding compatible members...</div>
 
-            <div class="action-row">
+            <div class="action-row" id="match-actions" hidden>
                 <button class="pass-btn" id="pass-button" type="button">Pass</button>
                 <button class="vibe-btn" id="vibe-button" type="button">Vibe</button>
             </div>

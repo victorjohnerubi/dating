@@ -16,6 +16,7 @@
             <a href="people.html">Members</a>
             <a href="matches.html">Matches</a>
             <a href="#" class="sign-out-link">Sign out</a>
+            <button class="theme-toggle" type="button" aria-pressed="false">Light mode</button>
         </nav>
     </header>
 
@@ -27,6 +28,18 @@
                     <strong id="direct-peer-name">Conversation</strong>
                     <small class="online-pill">Member</small>
                 </div>
+            </div>
+            <div class="conversation-safety-controls" aria-label="Conversation safety controls">
+                <label class="visually-hidden" for="report-reason">Reason for report</label>
+                <select id="report-reason">
+                    <option value="harassment">Harassment</option>
+                    <option value="spam">Spam</option>
+                    <option value="fake-profile">Fake profile</option>
+                    <option value="inappropriate-content">Inappropriate content</option>
+                    <option value="other">Other</option>
+                </select>
+                <button id="report-member" class="safety-action" type="button">Report</button>
+                <button id="block-member" class="safety-action danger-action" type="button">Block</button>
             </div>
             <p id="direct-status" class="direct-status" role="status"></p>
             <div class="chat-body" id="direct-chat-body" aria-live="polite"></div>
