@@ -6,11 +6,11 @@
     <title>Vibe | Dating App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-page">
     <header class="navbar">
         <div class="brand-wrap">
             <div class="logo">VIBE</div>
-            <span class="nav-status">System Online</span>
+            <span class="nav-status">Find your kind of love</span>
         </div>
         <nav aria-label="Main navigation" class="top-nav">
             <a href="index.html">Home</a>
@@ -26,48 +26,55 @@
 
     <main class="main-layout hero-layout">
         <section class="hero-block">
-            <p class="eyebrow">No random matches. Only real frequency.</p>
-            <h1>Connect Beyond the Swipe</h1>
-            <p>Welcome to Vibe. Match with people who share your exact interest stack, taste, and daily rhythm.</p>
+            <p class="eyebrow">Dating, at your own pace</p>
+            <h1>A little more love.<br>A lot more you.</h1>
+            <p>Meet real people, make room for a good conversation, and let the right connection happen naturally.</p>
 
             <div class="quick-stats">
                 <div>
-                    <strong>2.4k</strong>
-                    <span>Real members online</span>
+                    <strong>Real</strong>
+                    <span>People, not profiles made by AI</span>
                 </div>
                 <div>
-                    <strong>94%</strong>
-                    <span>Match quality score</span>
+                    <strong>Shared</strong>
+                    <span>Interests make an easy first hello</span>
                 </div>
                 <div>
-                    <strong>12</strong>
-                    <span>Profiles in view</span>
+                    <strong>Your</strong>
+                    <span>Next connection starts here</span>
                 </div>
             </div>
 
             <div class="cta-row">
                 <a href="signup.html" class="primary-btn">Create profile</a>
-                <a href="people.html" class="secondary-btn">Browse members</a>
+                <a href="matches.html" class="secondary-btn">See your matches</a>
             </div>
         </section>
 
-        <aside class="app-panel preview-panel">
+        <aside class="app-panel preview-panel" aria-label="Example match preview">
             <div class="phone-shell">
                 <div class="phone-topbar">
-                    <span>Vibe</span>
-                    <span class="dot-indicator"></span>
+                    <span>Example match</span>
+                    <span class="dot-indicator" aria-hidden="true"></span>
                 </div>
-
-                <div class="profile-card">
-                    <div class="card-badge">89% match</div>
+                <article class="profile-card" aria-label="Fictional example profile">
+                    <img class="profile-image" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Portrait used for the example profile">
+                    <span class="card-badge">Example profile</span>
+                    <span class="character-badge">Sample</span>
                     <div class="profile-meta">
-                        <h3>Maya</h3>
-                        <p>27 • Brooklyn</p>
+                        <h3>Amara, 27</h3>
+                        <p>Brooklyn · Here for a real connection</p>
                     </div>
-                    <div class="tag-row">
+                    <div class="tag-row" aria-label="Interests">
                         <span>Live music</span>
-                        <span>coffee runs</span>
+                        <span>Coffee</span>
+                        <span>Travel</span>
                     </div>
+                </article>
+                <p class="ai-disclosure home-example-caption">Example only. Real member profiles appear after you join.</p>
+                <div class="cta-row home-example-links">
+                    <a href="signup.html" class="primary-btn">Say hello</a>
+                    <a href="matches.html" class="secondary-btn">Browse matches</a>
                 </div>
             </div>
         </aside>

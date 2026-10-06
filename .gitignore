@@ -2,3 +2,8 @@ data/
 .env
 .env.*
 !.env.example
+/profiles.json
+/chat-history.json
+/direct-chats.json
+/safety-actions.json
+/session-secret
